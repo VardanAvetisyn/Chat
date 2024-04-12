@@ -21,7 +21,7 @@
       </h1>
     </header>
     <main class="login-main">
-      <form id="enter-chat" action="chat.html">
+      <form id="enter-chat" method="post" action="/signUp">
         <div class="form-control">
           <label for="username">Username</label>
           <input type="text" name="username" id="username" placeholder="Enter username..." required />
@@ -30,19 +30,8 @@
           <label for="password">Password</label>
           <input type="password" name="password" id="password" placeholder="Enter password..." required />
         </div>
-        <div class="form-control">
-          <label for="room">Room</label>
-          <select name="room" id="room">
-            <option value="Music">Music</option>
-            <option value="Books">Books</option>
-            <option value="Movies">Movies</option>
-            <option value="Games">Games</option>
-            <option value="Sport">Sport</option>
-            <option value="Art">Art</option>
-          </select>
-        </div>
-        <button type="submit" class="btn">LOGIN</button>
-        <div>Not registered? <a href="signup.html">Sign Up now.</a></div>
+        <button type="submit" class="btn">Sign Up</button>
+        <div>Already registered? <a href="index.html">Log in now.</a></div>
       </form>
       <img class="chat-gif" src="icons/animated.gif" alt="chatbox" />
     </main>
