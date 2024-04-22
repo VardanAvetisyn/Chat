@@ -150,7 +150,7 @@ a {
 
 .chat-form-container form {
   display: flex;
-   align-items: center; /* Vertically center items */
+  align-items: center; /* Vertically center items */
   /* justify-content: center; */
 }
 input,
@@ -171,7 +171,7 @@ select {
 /* login Page */
 .login-container {
   max-width: 700px;
-  margin: 80px auto;
+  margin: 10% auto;
   color: #fff;
 }
 
@@ -227,4 +227,12 @@ select {
   .chat-sidebar {
     display: none;
   }
+}
+
+#displayMessage {
+  height: 20px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
 }
