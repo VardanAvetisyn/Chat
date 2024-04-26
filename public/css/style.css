@@ -2,8 +2,8 @@
 
 :root {
   --primary: #1c1c1c;
-  --secondary: #34eaf0;
-  --light: #c5c864;
+  --secondary: #34eaf07c;
+  --light: #c5c86434;
 }
 
 * {
@@ -13,9 +13,10 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  margin: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
 ul {
@@ -45,6 +46,16 @@ a {
 .send-btn {
   margin-left: 10px;
 }
+.clip {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
 .chat-icon {
   width: 36px;
 }
@@ -56,7 +67,7 @@ a {
 
 .chat-container {
   position: relative;
-  max-width: 1100px;
+  /* max-width: 1100px; */
   background: #fff;
   margin: 30px auto;
   overflow: hidden;
@@ -170,22 +181,38 @@ select {
 
 /* login Page */
 .login-container {
-  max-width: 700px;
-  margin: 10% auto;
-  color: #fff;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+  margin-bottom: 20px;
+  
+}
+
+i {
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .login-header {
-  text-align: center;
+  background-color: #4caf50;
+  color: #fff;
   padding: 20px;
-  background: var(--primary);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-
+.login-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
 .login-main {
-  padding: 30px 40px;
-  background: var(--secondary);
+  padding: 20px;
 }
 
 .login-main p {
@@ -235,4 +262,41 @@ select {
   margin: auto;
   text-align: center;
   font-weight: 600;
+}
+#emojiSelector {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  width: 250px;
+  height: 250px;
+  left: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+ul#emojiList {
+  list-style-type: none;
+  display: flex;
+  margin-left: -38px;
+  margin-top: -1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+  height: 250px;
+  width: 250px;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+
+ul#emojiList li {
+  border-radius: 5px;
+  transition: .3s;
+}
+
+ul#emojiList li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }

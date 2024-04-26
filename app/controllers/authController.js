@@ -7,7 +7,6 @@ require("dotenv").config();
 
 const usersFilePath = path.join(__dirname, "../../public/users.json");
 const JWT_SECRET_KEY = process.env.MY_CUSTOM_SECRET_KEY;
-console.log(JWT_SECRET_KEY);
 
 const signUp = (req, res) => {
   const username = req.body.username;
@@ -99,4 +98,5 @@ const login = (req, res) => {
       });
   });
 };
+
 module.exports = { signUp, login };

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Ba-CHAT-a</title>
   </head>
   <body>
@@ -33,7 +34,16 @@
         <div class="chat-messages"></div>
       </main>
       <div class="chat-form-container">
+
+        <div id="emojiSelector">
+          <!-- <div id="emojiSearch"><input type="text" placeholder="Search Emoji"></div> -->
+  
+          <ul id="emojiList"></ul>
+        </div>
+
         <form id="chat-form">
+          <i class="ri-attachment-2"></i>
+          <i class="ri-emoji-sticker-line" id="emojiSelectorIcon"></i>
           <input
             id="msg"
             name="msg"
@@ -49,5 +59,6 @@
       </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
   </body>
 </html>
